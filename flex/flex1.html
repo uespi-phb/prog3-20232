@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex #1</title>
+  <style>
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: lightgray;
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+      background-color: bisque;
+      border: 1px solid black;
+      margin: 2px 2px;
+    }
+
+    .small {
+      flex-grow: 10;
+    }
+
+    .big {
+      flex-grow: 20;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li class="small">Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li class="big">Item 7</li>
+    <li>Item 8</li>
+    <li>Item 9</li>
+  </ul>
+</body>
+
+</html>

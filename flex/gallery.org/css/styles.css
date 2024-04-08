@@ -1,0 +1,46 @@
+body {
+  font-family: Roboto;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: aliceblue;
+  justify-content: center;
+}
+
+.item {
+  padding: 4px;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+img {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .item {
+    flex-basis: 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    flex-basis: 98%;
+  }
+}

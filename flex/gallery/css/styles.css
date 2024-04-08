@@ -1,0 +1,44 @@
+body {
+  font-family: Roboto;
+}
+
+main {
+  background-color: lightblue;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.photo {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.photo:hover {
+  transform: scale(1.10);
+}
+
+img {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+@media (max-width: 800px) {
+  .photo {
+    flex-basis: 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    flex-basis: 98%;
+  }
+}
