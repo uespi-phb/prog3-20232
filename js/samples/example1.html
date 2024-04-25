@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo #1</title>
+</head>
+
+<body>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae corrupti ipsum quidem similique, expedita
+    eligendi delectus molestiae repellat veritatis tempora eaque! Reprehenderit, itaque officia. Sed dignissimos ducimus
+    ullam quo voluptatum.</p>
+  <button type="button">CLICK ME</button>
+
+  <script>
+    function buttonClick() {
+      console.log('Botão clicado!')
+      let p = document.querySelector('p')
+      p.style.color = p.style.color == 'red' ? 'black' : 'red'
+    }
+    let btn = document.querySelector('button')
+    btn.addEventListener('click', buttonClick)
+  </script>
+</body>
+
+</html>

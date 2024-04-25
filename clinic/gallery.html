@@ -4,32 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/gallery.css">
   <title>Clínica Exemplo :: Galeria</title>
 </head>
 
 <body>
-  <iframe src="./header.html" title="Header Page"></iframe>
-  <main>
-    <h2>Nossa Estrutura</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><img src="./images/image0.jpeg" alt="Imagem 1"></td>
-          <td><img src="./images/image1.jpeg" alt="Imagem 2"></td>
-          <td><img src="./images/image2.jpeg" alt="Imagem 3"></td>
-          <td><img src="./images/image3.jpeg" alt="Imagem 4"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/image4.jpeg" alt="Imagem 1"></td>
-          <td><img src="./images/image5.jpeg" alt="Imagem 2"></td>
-          <td><img src="./images/image6.jpeg" alt="Imagem 3"></td>
-          <td><img src="./images/image7.jpeg" alt="Imagem 4"></td>
-        </tr>
-      </tbody>
-    </table>
-  </main>
-  <iframe src="./footer.html" title="Footer Page"></iframe>
+  <div class="gallery-container">
+    <header>
+      <h1>Clínica Exemplo</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html" target="_top">Principal</a></li>
+        <li><a href="./gallery.html" target="_top">Galeria</a></li>
+        <li><a href="./login.html" target="_top">Login</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Nossa Estrutura</h2>
+      <div class="image-container">
+        <img src="./images/image0.jpeg" alt="Imagem 1">
+        <img src="./images/image1.jpeg" alt="Imagem 2">
+        <img src="./images/image2.jpeg" alt="Imagem 3">
+        <img src="./images/image3.jpeg" alt="Imagem 4">
+        <img src="./images/image4.jpeg" alt="Imagem 1">
+        <img src="./images/image5.jpeg" alt="Imagem 2">
+        <img src="./images/image6.jpeg" alt="Imagem 3">
+        <img src="./images/image7.jpeg" alt="Imagem 4">
+      </div>
+    </main>
+    <footer>
+      <address>
+        Av Nossa Senhora de Fátima, s/n - Bairro de Fátima - Parnaíba-PI
+      </address>
+    </footer>
+  </div>
 </body>
 
 </html>
