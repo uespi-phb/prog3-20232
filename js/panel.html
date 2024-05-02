@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    #panel {
+      display: flex;
+      width: 70%;
+      height: 5em;
+      padding: 0.5em;
+      background-color: lightblue;
+      border: 2px solid darkblue;
+      border-radius: 8px;
+      margin-top: 50vh;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+    }
+
+    #button {
+      display: flex;
+      width: 30%;
+      height: 2em;
+      margin: 1em auto;
+      background-color: lightcoral;
+      border: 1px solid darkred;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.75rem;
+      padding: 0.25em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="panel">
+    mensagem de texto
+  </div>
+  <div id="button">
+    Exibir Mensagem
+  </div>
+
+  <script>
+    const showMessage = (msg) => {
+      const panel = document.getElementById('panel')
+      const button = document.getElementById('button')
+      panel.textContent = msg
+      if (panel.style.visibility === 'visible') {
+        panel.style.visibility = 'hidden';
+        button.textContent = 'Exibir Mensagem'
+      } else {
+        panel.style.visibility = 'visible';
+        button.textContent = 'Ocultar Mensagem'
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const button = document.getElementById('button')
+      button.addEventListener('click', () => {
+        showMessage('Esta é uma mensagem qualquer gerada pelo programador.')
+      })
+    })
+  </script>
+</body>
+
+</html>
