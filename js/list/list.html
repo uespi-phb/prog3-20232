@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Interesses</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    li {
+      font-size: 0.85rem;
+      background-color: lightblue;
+      border: 1px solid blue;
+      border-radius: 6px;
+      padding: 4px 10px;
+      margin-bottom: 4px;
+      width: 50%;
+    }
+
+    li span {
+      color: red;
+      float: right;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <label for="data">Interesse:</label>
+  <input id="data" name="data" type="text">
+  <button id="add" type="button">Adicionar</button>
+  <ol>
+  </ol>
+
+  <script src="./list.js"></script>
+</body>
+
+</html>
