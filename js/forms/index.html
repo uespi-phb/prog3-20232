@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="form-frame">
+    <h2>Cadastro de Aluno</h2>
+    <form name="student" method="get" action="./data.html" novalidate>
+      <div class="form-field">
+        <label for="student-id">Matrícula</label>
+        <input id="student-id" name="student-id" type="number">
+        <span class="form-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="student-name">Nome</label>
+        <input id="student-name" name="student-name" type="text">
+        <span class="form-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="student-email">E-mail</label>
+        <input id="student-email" name="student-email" type="email">
+        <span class="form-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="student-born">Data Nascimento</label>
+        <input id="student-born" name="student-born" type="date">
+        <span class="form-error"></span>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="./js/form.js"></script>
+</body>
+
+</html>

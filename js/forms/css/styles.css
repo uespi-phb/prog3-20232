@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+}
+
+label {
+  display: block;
+}
+
+.form-frame {
+  width: 70%;
+  padding: 0em 1em 2em 1em;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.form-frame input {
+  width: 95%;
+}
+
+.form-frame button {
+  margin-top: 1em;
+}
+
+.form-field {
+  margin-bottom: 0.5em;
+}
+
+.form-field label {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.form-error {
+  display: block;
+  color: red;
+  font-style: italic;
+  font-size: 0.85em;
+  margin-top: 0.25em;
+}
