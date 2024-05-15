@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Consulta CEP</title>
+</head>
+
+<body>
+  <h2>Consulta de CEP</h2>
+  <div class="frame">
+    <form method="get" action=".">
+      <div class="field">
+        <label for="zipcode">CEP</label>
+        <input id="zipcode" type="text" maxlength="8">
+      </div>
+      <div class="field">
+        <label for="address">Logradouro</label>
+        <input id="address" type="text" readonly>
+      </div>
+      <div class="field">
+        <label for="neighbor">Bairro</label>
+        <input id="neighbor" type="text" readonly>
+      </div>
+      <div class="field">
+        <label for="city">Cidade</label>
+        <input id="city" type="text" readonly>
+      </div>
+      <div class="field">
+        <label for="state">UF</label>
+        <input id="state" type="text" readonly>
+      </div>
+    </form>
+  </div>
+  <script src="./js/zipcode.js"></script>
+</body>
+
+</html>
