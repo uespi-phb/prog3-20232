@@ -9,15 +9,16 @@
 
 <body>
   <h1>TinCat - Conheça Gatos na Internet</h1>
-  <form method="get">
+  <form method="get" action="./cats.html">
     <label for="breed">Raça</label>
     <select id="breed" name="breed">
     </select>
+    <input id="breed-name" name="breed-name" type="hidden">
     <label for="count">Quant</label>
     <input id="count" name="count" type="number">
     <button type="submit">Buscar</button>
   </form>
-  <script src="./js/cats.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
