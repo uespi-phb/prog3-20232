@@ -4,10 +4,8 @@ function onNameChange(event) {
 
   xhr.open('POST', '/candidate', true)
   xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8')
-
   xhr.onload = (event) => {
-    //onNameResponse(xhr, event)
-    console.log(xhr)
+    onNameResponse(xhr, event)
   }
 
   const body = {
