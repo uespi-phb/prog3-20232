@@ -9,7 +9,7 @@ app.use(express.static('./frontend'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.post('/candidate', endpoints.candidate)
+app.post('/candidate', endpoints.searchCandidate)
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`)

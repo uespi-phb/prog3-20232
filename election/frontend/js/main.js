@@ -12,12 +12,21 @@ function onNameChange(event) {
     name: event.target.value
   }
   const json = JSON.stringify(body)
-  xhr.send(json)
+  xhr.send(json)  // '{"name":"maria"}'
 }
+
+/*
+<tr>
+<td>XICÃO</td>
+<td>Deputado</td>
+<td>BREJO</td>
+<td>436</td>
+</tr>
+*/
 
 function onNameResponse(xhr, event) {
   if (xhr.status != 200) {
-    return;
+    return
   }
 
   const data = JSON.parse(xhr.response)
@@ -41,16 +50,14 @@ function onNameResponse(xhr, event) {
     trElem.innerHTML = `<td>${cand.name}</td><td>${cand.office}</td><td>${cand.city}</td><td>${votes}</td>`
     tbody.appendChild(trElem)
   })
+
   const tfoot = document.getElementById('result-footer')
   tfoot.innerHTML = ''
-  console.log(tfoot)
 
   const trElem = document.createElement('tr')
   const votes = Intl.NumberFormat('pt-br').format(totalVotes)
-  const cities = Intl.NumberFormat('pt-br').format(data.length)
 
-  trElem.innerHTML = `<td></td><td>TOTAL</td><td>${cities}</td><td>${votes}</td>`
-  console.log(trElem)
+  trElem.innerHTML = `<td></td><td></td><td>TOTAL</td><td>${votes}</td>`
   tfoot.appendChild(trElem)
 
   table.style.display = 'block'
