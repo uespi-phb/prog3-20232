@@ -1,0 +1,24 @@
+.card {
+  width: 90%;
+  height: 60vh;
+  margin: 5rem auto;
+  color: var(--color-shade0);
+  background-color: var(--color-shade5);
+  border-radius: 0.5rem;
+}
+
+.title {
+  color: var(--color-shade1);
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.line {
+  color: var(--color-shade1);
+  border-color: var(--color-shade1);
+  border-width: 0.20rem;
+}
+
+.body {
+  color: var(--color-shade0);
+  padding: 1rem;
+}
