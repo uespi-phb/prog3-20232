@@ -9,13 +9,12 @@
 
 .title {
   color: var(--color-shade1);
+  border: 0;
   padding: 1rem 1rem 0.5rem 1rem;
-}
-
+  }
+  
 .line {
-  color: var(--color-shade1);
-  border-color: var(--color-shade1);
-  border-width: 0.20rem;
+  border-top: 0.35rem solid var(--color-shade1);
 }
 
 .body {

@@ -12,7 +12,7 @@ export interface CardProps {
 export default function Card(props: CardProps) {
   return (
     <div className={styles.card}>
-      <h1 className={styles.title} style={{color: props.titleColor}}>Título do Card</h1>
+      <h1 className={styles.title} style={{color: props.titleColor}}>{props.title}</h1>
       <hr className={styles.line} style={{color: props.lineColor}}/>
       <div className={styles.body} style={{backgroundColor: props.bodyColor}}>{props.children}</div>
     </div>

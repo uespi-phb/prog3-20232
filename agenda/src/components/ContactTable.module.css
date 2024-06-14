@@ -1,0 +1,60 @@
+.table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.table th {
+  color: white;
+  background-color: var(--color-shade1);
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+  text-align: left;
+}
+  
+.table th:first-child {
+    border-top-left-radius: 0.5rem;
+    text-align: center;
+}
+
+.table th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+.table tbody td {
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--color-shade4);
+}
+
+.table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.actions .edit {
+  color: blue;
+}
+  
+.actions .remove {
+  color: red;
+}
+
+.actions svg {
+  width: 1.5rem;
+}
+
+.actions span:hover {
+  color: var(--color-shade2);
+  cursor: pointer;
+}

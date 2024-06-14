@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.form h1 {
+  color: var(--color-shade2);
+}
+
+.form input {
+  color: black;
+  background-color: var(--color-shade4);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.15rem;
+}
+
+.form input:hover {
+  background-color: var(--color-shade2);
+}
+
+.form input:focus {
+  background-color: var(--color-shade3);
+}
+
+.form label {
+  color: var(--color-shade1);
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+.form div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  cursor: default;
+}
